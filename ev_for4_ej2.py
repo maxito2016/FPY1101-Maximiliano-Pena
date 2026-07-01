@@ -35,11 +35,3 @@ nombre, carrera = registarar_usuario()
 libro, dias = registrar_libro()
 
 generar_resumen(nombre, carrera, libro, dias)
-
-
-print("----COMPROBACIÓN DE VENCIMIENTO----")
-if dias <= 14: 
-    dias_restantes = 14 - dias
-    print(f"-> Registro exitoso. Al alumno le quedan {dias_restantes} días de margen antes del límite.")
-else:
-    print("-> Alerta: El sistema bloqueará al usuario hasta que regularice los días.")
