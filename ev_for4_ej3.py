@@ -63,8 +63,3 @@ while True:
         break
     else:
         print("Opción no válida.")
-        
-        if promedio >= 6.0: 
-            print("¡Felicitaciones extraordinarias! Alumno destacado en el cuadro de honor.")
-        elif promedio < 4.0:
-            print("Atención: Se sugiere inscribir al alumno en los talleres de reforzamiento académico.")
