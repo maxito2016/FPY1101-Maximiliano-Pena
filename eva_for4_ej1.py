@@ -39,3 +39,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    if 'lista_temperaturas' in locals() and len(lista_temperaturas) > 0:
+        print("----REPORTE ESTADÍSTICO DE TEMPERATURAS----")
+        print(f"Temperatura promedio: {sum(lista_temperaturas) / len(lista_temperaturas):.1f}°C")
+        print(f"Temperatura máxima registrada: {max(lista_temperaturas)}°C")
+        print(f"Temperatura mínima registrada: {min(lista_temperaturas)}°C")
+        
+    else:
+        print("No se registraron temperaturas para generar las estadísticas.")
